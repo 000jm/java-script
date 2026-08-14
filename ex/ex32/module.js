@@ -24,7 +24,7 @@
 //     return a - b
 // }
 
-class Greeter {
+export class Greeter {
     constructor(name) {
         this.greeting = 'helloo'
         this.name = name
@@ -34,9 +34,10 @@ class Greeter {
     }
 }
 
-const greeterInstance = new Greeter('joao')
+export const greeterInstance = new Greeter('joao')
 // module.exports = greeterInstance
-exports.add = function add(a, b) {
+
+const add = (a, b) => {
     return a + b
 }
 

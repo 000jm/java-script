@@ -1,7 +1,9 @@
-import { add } from './module.js'
+import { Greeter } from './module.js'
 // const greeterInstance = require('./module.js')
 
 // console.log(greeterInstance.greet('joao'))
-console.log(add(3, 4));
+const miguel = new Greeter('miguel')
+console.log(miguel.greeting);
+console.log(miguel.name);
 
 // usar apenas uma forma de import
